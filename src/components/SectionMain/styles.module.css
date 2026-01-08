@@ -1,0 +1,124 @@
+.gradientBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.gradientBottomTop {
+  background-image: linear-gradient(
+    to top,
+    #0a0a0a 0%,
+    #0a0a0a99 50%,
+    #0a0a0acc 100%
+  );
+}
+.gradientLeftRight {
+  background-image: linear-gradient(
+    to right,
+    #0a0a0ab3 0%,
+    #0a0a0a00 50%,
+    #0a0a0ab3 100%
+  );
+}
+
+.hero {
+  width: 100dvw;
+  height: 90rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.mainBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroTextContent {
+  margin-top: -10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.heroTextContent strong {
+  font-size: 1.6rem;
+  font-family: var(--barlow-font);
+  font-weight: 500;
+  text-transform: uppercase;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 10rem;
+  border: solid 1px var(--pink-red-30);
+  background-color: var(--pink-red-10);
+}
+
+.heroTitle {
+  font-family: var(--roadstore-font);
+  font-size: clamp(5.1rem, 3rem + 4.2188vw, 10rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 75%;
+  filter: drop-shadow(0 0.4rem 0.6rem rgba(255, 255, 255, 0.15));
+}
+
+.heroText p {
+  font-family: var(--barlow-font);
+  max-width: 73.6rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    height: 70rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 10rem;
+  }
+  .heroTextContent{
+    gap: 2rem;
+  }
+  .heroText {
+    padding: 1rem;
+    gap: 3rem;
+  }
+  .heroText p {
+    font-size: 2.2rem;
+    letter-spacing: 0.08px;
+    line-height: 20px;
+  }
+  .heroBtns {
+    flex-flow: column;
+    gap: 2rem;
+  }
+}

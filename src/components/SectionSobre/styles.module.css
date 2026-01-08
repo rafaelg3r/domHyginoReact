@@ -1,0 +1,76 @@
+.about {
+  padding-top: 8rem;
+  display: flex;
+  flex-flow: column;
+  gap: 12rem;
+}
+
+.about h3 {
+  font-size: 4.2rem;
+  font-family: var(--roadstore-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about p {
+  font-weight: 400;
+}
+
+.logo {
+  width: max-content;
+  max-height: 33.8rem;
+  filter: drop-shadow(0 0 0.6rem rgba(255, 255, 255, 0.2));
+}
+
+.title {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: clamp(4rem, 3.54rem + 1.4286vw, 7.2rem);
+  font-weight: 400;
+}
+
+.title span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding: 0 12rem;
+  gap: 6rem;
+}
+.aboutText {
+  display: flex;
+  flex-flow: column;
+  justify-content: right;
+  width: 100%;
+  max-width: 65.3rem;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .contentContainer {
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+  }
+  .logo {
+    max-height: 23.8rem;
+  }
+}
+@media (max-width: 480px) {
+ .contentContainer{
+  padding: 0 1.5rem;
+ }
+  .logo {
+    max-height: 10rem;
+  }
+}

@@ -1,0 +1,111 @@
+.lojas {
+  padding: 10rem 12rem 0 12rem;
+  background-image: url("../../assets/home/lojas/lojas-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lojasTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lojasTitle {
+  font-size: var(--h2-responsive);
+  font-weight: 400;
+}
+
+.lojasContentContainer {
+  display: flex;
+
+  justify-content: space-between;
+  padding-top: 11.5rem;
+  padding-bottom: 19rem;
+  gap: 3rem;
+}
+
+.lojasMap {
+  position: relative;
+  max-width: 77rem;
+  width: 100%;
+  height: auto;
+}
+
+.lojasMap img {
+  min-width: 20rem;
+  max-width: 77rem;
+  width: 100%;
+  height: auto;
+}
+
+.lojasAreas {
+  display: none;
+}
+
+.lojasSocials h3 {
+  filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.25));
+  font-size: 4.2rem;
+  font-weight: 400;
+  max-width: 47.5rem;
+  margin-bottom: 2rem;
+  font-family: var(--barlow-font);
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.lojasLista {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.lojasLista a .domItemLista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: var(--pink-red-10);
+  border: 2px solid var(--pink-red-30);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.1s ease,
+    background-color 0.2s ease;
+}
+
+.lojasLista a .domItemLista .itemListaContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.lojasLista a .domItemLista .itemListaContent img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.lojasLista a .domItemLista img {
+  width: 1.8rem;
+  height: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.lojasLista a .domItemLista span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.lojasLista a .domItemLista:hover {
+  transform: scale(1.05);
+  background-color: var(--pink-red);
+}
+
+@media (max-width: 1024px) {
+  .lojas {
+    padding: 10rem 2rem 0 2rem;
+  }
+  .lojasContentContainer {
+    flex-flow: column;
+  }
+}

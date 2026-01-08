@@ -1,0 +1,60 @@
+.gridBg {
+  --s: 100px; /* tamanho do grid */
+  --n: 4; /* numero de traços */
+  --t: 2px; /* espessura dos traços */
+  --g: 10px; /* gap dos traços */
+
+  padding: 2rem;
+
+  --c: var(--pink-red-30) 25%, #0000 0;
+  background: conic-gradient(at var(--g) var(--t), var(--c))
+      calc((var(--s) / var(--n) - var(--g) + var(--t)) / 2) 0 /
+      calc(var(--s) / var(--n)) var(--s),
+    conic-gradient(from 180deg at var(--t) var(--g), var(--c)) 0
+      calc((var(--s) / var(--n) - var(--g) + var(--t)) / 2) / var(--s)
+      calc(var(--s) / var(--n));
+
+  mask-image: radial-gradient(ellipse, #0a0a0a 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse, #0a0a0a 30%, transparent 70%);
+}
+
+.franqueados {
+  padding: 3rem 0 0 0;
+}
+
+.franqueadosContainer {
+  padding: 8rem 12rem;
+  margin: 12rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.title {
+  font-size: 6rem;
+  letter-spacing: 2px;
+}
+
+.text {
+  text-align: center;
+  max-width: 73.5rem;
+  font-size: 2.4rem;
+}
+
+.franqueados span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (max-width: 1024px) {
+  .franqueadosContainer {
+    padding: 4rem 0rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 2rem;
+  }
+}

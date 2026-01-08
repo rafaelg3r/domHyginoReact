@@ -1,0 +1,75 @@
+.btn {
+  background-color: var(--pink-red-dark);
+  color: var(--semi-white);
+  border: none;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  font-family: var(--barlow-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 90%;
+
+  cursor: pointer;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(3, 1, 1, 0.4);
+
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--pink-red);
+  box-shadow: 0 0 2rem var(--pink-red-30);
+}
+
+.small {
+  padding: 1rem 2rem;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+.medium {
+  padding: 2rem 4rem;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.big {
+  padding: 2.2rem 8.3rem;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.borderSmall {
+  padding: 0.8rem 1.8rem;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+.borderMedium {
+  padding: 2rem 4rem;
+}
+.borderBig {
+  padding: 2rem 8.1rem;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.border {
+  border: 2px solid var(--pink-red-dark);
+  background-color: var(--pink-red-10) !important;
+}
+.border:hover {
+  background-color: var(--pink-red-30) !important;
+  border: 2px solid var(--pink-red);
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 1.6rem;
+    width: 100%;
+    flex: 1;
+  }
+  .big {
+    padding: 1.6rem 0;
+  }
+  .borderBig {
+    padding: 1.4rem 7.8rem;
+  }
+}
