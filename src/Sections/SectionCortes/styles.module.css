@@ -112,6 +112,11 @@
   max-width: 54rem;
   padding-bottom: 3rem;
 }
+@media (max-width: 1320px){
+  .cortesMenuTitle{
+    padding-top: 10rem;
+  }
+}
 
 @media (max-width: 1024px) {
   .menuText {
@@ -122,5 +127,11 @@
   }
   .menuText p {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cortesMenuTitle {
+    padding-top: 6rem;
   }
 }

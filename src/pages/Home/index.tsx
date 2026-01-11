@@ -1,8 +1,8 @@
-import { SectionMain } from "../../components/SectionMain";
-import { SectionSobre } from "../../components/SectionSobre";
-import { SectionCortes } from "../../components/SectionCortes";
-import { SectionLojas } from "../../components/SectionLojas";
-import { SectionFranqueado } from "../../components/SectionFranqueado";
+import { SectionMain } from "../../Sections/SectionMain";
+import { SectionSobre } from "../../Sections/SectionSobre";
+import { SectionCortes } from "../../Sections/SectionCortes";
+import { SectionLojas } from "../../Sections/SectionLojas";
+import { SectionFranqueado } from "../../Sections/SectionFranqueado";
 
 export function Home() {
   return (

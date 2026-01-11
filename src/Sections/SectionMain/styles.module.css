@@ -101,10 +101,21 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .hero {
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
+  .heroText p {
+    max-width: 50rem;
+  }
+  .heroBtns {
+    flex-flow: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
   .heroTextContent{
     gap: 2rem;
   }
@@ -116,9 +127,5 @@
     font-size: 2.2rem;
     letter-spacing: 0.08px;
     line-height: 20px;
-  }
-  .heroBtns {
-    flex-flow: column;
-    gap: 2rem;
   }
 }

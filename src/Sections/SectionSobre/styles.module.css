@@ -67,9 +67,9 @@
   }
 }
 @media (max-width: 480px) {
- .contentContainer{
-  padding: 0 1.5rem;
- }
+  .contentContainer {
+    padding: 0 1.5rem;
+  }
   .logo {
     max-height: 10rem;
   }

@@ -4,8 +4,8 @@ import { HashLink as Link } from "react-router-hash-link";
 
 import HomeImg from "../../assets/home/home-bg.jpg";
 
-import { Button } from "../Button";
-import { GradientText } from "../GradientText";
+import { Button } from "../../components/Button";
+import { GradientText } from "../../components/GradientText";
 
 export function SectionMain() {
   return (

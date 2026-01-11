@@ -1,4 +1,4 @@
-import { GradientText } from "../GradientText";
+import { GradientText } from "../../components/GradientText";
 import styles from "./styles.module.css";
 
 import mapImg from "../../assets/home/lojas/lojas-mapa.png";

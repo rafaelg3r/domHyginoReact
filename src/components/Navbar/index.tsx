@@ -117,9 +117,17 @@ export function Navbar() {
 
       <div className={styles.headerMobile}>
         <nav className={styles.navMobile}>
-          <Link smooth className={styles.lineLink} to="/#home">
+          <Link smooth className={styles.mobileNavbarButton} to="/#home">
             <img src="" alt="Icone de casa" />
             home
+          </Link>
+          <Link smooth className={styles.mobileNavbarButton} to="/menu">
+            <img src="" alt="Icone de cardapio" />
+            menu
+          </Link>
+          <Link smooth className={styles.mobileNavbarButton} to="/#lojas">
+            <img src="" alt="Icone de contato" />
+            Contato
           </Link>
         </nav>
       </div>

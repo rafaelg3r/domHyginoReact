@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 
-import { GradientText } from "../GradientText";
+import { GradientText } from "../../components/GradientText";
 
 import LogoDomHygino from "../../assets/logos/logoSlim.png";
 export function SectionSobre() {

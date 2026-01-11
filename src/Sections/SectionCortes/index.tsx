@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
-import { GradientText } from "../GradientText";
+import { GradientText } from "../../components/GradientText";
 import { Link } from "react-router-dom";
-import { Button } from "../Button";
+import { Button } from "../../components/Button";
 
 //Imagens
 import topBg from "../../assets/home/cortes/cortes-top-bg.png";

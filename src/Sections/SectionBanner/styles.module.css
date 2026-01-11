@@ -1,0 +1,43 @@
+.bannerContainer{
+  padding-top: 8.4rem;
+}
+.menuBanner {
+  background-image: url("../../assets/menu/BannerBg.png");
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.menuTitle {
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+}
+.menuBannerSteak {
+  position: relative;
+
+  z-index: 2;
+}
+.menuBannerSteak::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  padding: 3rem;
+  left: 4rem;
+  right: 5.5rem;
+  bottom: 0rem;
+  background-color: rgb(229, 51, 68, 0.25);
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(5rem);
+}
+.bannerLine {
+  background-color: var(--dark-pink-gray);
+  height: 0.5rem;
+  width: 100%;
+  box-shadow: 0 0.3rem 1.2rem rgba(10, 10, 10, 0.3);
+}
