@@ -1,0 +1,44 @@
+.cardContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 33.5rem;
+  height: 21.6rem;
+
+  border-radius: 0.4rem;
+  border: solid 3px #1a1517;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+
+  overflow: hidden;
+}
+.cardContainer:hover {
+  background-color: var(--dark-pink-gray);
+}
+
+.cardContainer img {
+  max-height: 13.5rem;
+  filter: drop-shadow(-0.4rem 0.4rem 1rem rgba(3, 1, 1, 0.5));
+}
+
+.textContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.textContainer strong {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 0.16rem;
+  color: var(--semi-white);
+}
+.textContainer span {
+  color: var(--light-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}

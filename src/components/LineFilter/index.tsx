@@ -1,11 +1,10 @@
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
+import { useCurrentLine } from "../../utils/currentLine";
 
 export function LineFilter() {
-  const [searchParams] = useSearchParams();
-  const currentLine = searchParams.get("linha");
+  const currentLine = useCurrentLine();
   const selectedLine = currentLine?.toLocaleLowerCase();
 
   return (
@@ -21,7 +20,7 @@ export function LineFilter() {
                 selectedLine === "boutique" && styles.menuSelected
               )}
             >
-              Linha Boutique
+              boutique
             </Link>
             <Link
               to="?linha=Novilho Jovem"
@@ -30,7 +29,7 @@ export function LineFilter() {
                 selectedLine === "novilho jovem" && styles.menuSelected
               )}
             >
-              Linha Novilho Jovem
+              novilho jovem
             </Link>
             <Link
               to="?linha=Churrasco"
@@ -39,7 +38,7 @@ export function LineFilter() {
                 selectedLine === "churrasco" && styles.menuSelected
               )}
             >
-              Linha Churrasco
+              churrasco
             </Link>
             <Link
               to="?linha=Pampeira"
@@ -48,7 +47,7 @@ export function LineFilter() {
                 selectedLine === "pampeira" && styles.menuSelected
               )}
             >
-              Linha Pampeira
+              pampeira
             </Link>
             {/* <Link to="?linha=Produtos">Produtos</Link> */}
           </div>

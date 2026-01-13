@@ -7,13 +7,19 @@ import { Display } from "../../components/Display";
 
 export function Menu() {
   return (
-    <>
+    <div className={styles.menuContainer}>
       <SectionBanner />
       <div className={styles.menuMainContent}>
-        <LineFilter />
-        <MenuCards />
-        <Display />
+        <div className={styles.menuFilterCardsContainer}>
+          <div className={styles.filterCards}>
+            <LineFilter />
+            <MenuCards />
+          </div>
+        </div>
+        <div className={styles.menuDisplay}>
+          <Display />
+        </div>
       </div>
-    </>
+    </div>
   );
 }

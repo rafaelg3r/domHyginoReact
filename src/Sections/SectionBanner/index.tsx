@@ -10,7 +10,7 @@ import TextPampeira from "../../assets/menu/linhas-banner/textPampeira.png";
 import TextChurrasco from "../../assets/menu/linhas-banner/textChurrasco.png";
 
 export function SectionBanner() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   // Linha atual baseada na URL ou usa default
   const currentLine = searchParams.get("linha") || "Boutique";
@@ -57,7 +57,7 @@ export function SectionBanner() {
           />
         </picture>
       </div>
-      <div className={styles.bannerlLine}></div>
+      <div className={styles.bannerLine}></div>
     </div>
   );
 }
