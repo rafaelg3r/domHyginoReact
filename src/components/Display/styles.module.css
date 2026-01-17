@@ -1,6 +1,74 @@
-.displaY {
+.menuDisplay {
+  padding: 3rem 4rem;
+  background-image: url("../../assets/menu/display/display-noise-bg.png");
+  background-color: var(--dark-pink-gray);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.displaySteakContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.displaySteakContent img {
+  filter: drop-shadow(0 0.6rem 1rem rgba(0, 0, 0, 0.5));
+}
+.displayTitle {
+  font-family: var(--roadstore-font);
+  font-size: 3.6rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.displayDescription {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.55rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.displayInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.displaySidesContainer {
+}
+.sidesTitle {
+  font-size: 2.4rem;
+  font-variant: small-caps;
+  font-weight: 600;
+  max-width: fit-content;
+}
+
+.displaySidesContainer,
+.displayPairingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.displaySides,
+.displayPairings {
+  display: flex;
+  gap: 2rem;
+}
+.iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: fit-content;
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  background-color: var(--pink-gray);
+}
+.sidesIcons {
+  max-width: 2.4rem;
+  max-height: 2.4rem;
 }

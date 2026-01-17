@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import { Button } from "../Button";
+
 // Imagens
 import LogoSlim from "../../assets/logos/logoSlim.png";
 import downArrow from "../../assets/icons/downArrow.png";
@@ -64,12 +64,12 @@ export function Navbar() {
                     >
                       Linha Pampeira
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/menu?linha=Produtos"
                       className={styles.produtosListItem}
                     >
                       Produtos
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               )}
@@ -78,9 +78,9 @@ export function Navbar() {
             <Link smooth className={styles.lineLink} to="/#lojas">
               lojas
             </Link>
-            <NavLink className={styles.lineLink} to="/blog">
+            {/* <NavLink className={styles.lineLink} to="/blog">
               blog
-            </NavLink>
+            </NavLink> */}
           </div>
 
           <div className={styles.rightNav}>
@@ -121,7 +121,7 @@ export function Navbar() {
             <img src="" alt="Icone de casa" />
             home
           </Link>
-          <Link smooth className={styles.mobileNavbarButton} to="/menu">
+          <Link smooth className={styles.mobileNavbarButton} to="/menu#home">
             <img src="" alt="Icone de cardapio" />
             menu
           </Link>

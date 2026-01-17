@@ -14,6 +14,7 @@ export function GradientText({
   variant = "right",
   as: Tag = "span",
   className,
+  
 }: GradientTextProps) {
   return <Tag className={clsx(styles[variant], className)}>{children}</Tag>;
 }

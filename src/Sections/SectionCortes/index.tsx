@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import { GradientText } from "../../components/GradientText";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { Button } from "../../components/Button";
 
 //Imagens

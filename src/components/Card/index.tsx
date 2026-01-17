@@ -1,5 +1,8 @@
 import styles from "./styles.module.css";
 
+import { Button } from "../Button";
+import { HashLink as Link } from "react-router-hash-link";
+
 import denverImg from "../../assets/menu/carnes/denver-small.png";
 import cowboyImg from "../../assets/menu/carnes/cowboy-small.png";
 import shoulderImg from "../../assets/menu/carnes/shoulder-small.png";
@@ -20,16 +23,17 @@ import alcatraImg from "../../assets/menu/carnes/alcatra-small.png";
 type CardProps = {
   name: string;
   shortDescription: string;
+  link: string;
 };
 
-export function Card({ name, shortDescription }: CardProps) {
+export function Card({ name, shortDescription, link }: CardProps) {
   //mapeamento de imagens
   const imageMap: Record<string, string> = {
     DENVER: denverImg,
     COWBOY: cowboyImg,
     SHOULDER: shoulderImg,
     "STEAK SHOULDER": shoulderSteakImg,
-    "HOUSE HIB": houseHibImg,
+    "HOUSE RIB": houseHibImg,
     CONTRAFILÉ: contrafileImg,
     PICANHA: picanhaImg,
     MAMINHA: maminhaImg,
@@ -47,13 +51,27 @@ export function Card({ name, shortDescription }: CardProps) {
 
   return (
     <>
-      <div className={styles.cardContainer}>
-        <img src={image} alt={` Imagem da carne ${name.toLocaleLowerCase()}`} />
+      <Link className={styles.cardContainer} to={link}>
+        <div className={styles.cardImgContainer}>
+          <img
+            src={image}
+            alt={` Imagem da carne ${name.toLocaleLowerCase()}`}
+          />
+          <div className={styles.hoverContent}>
+            <div className={styles.hoverText}>
+              <strong>{name}</strong>
+              <span>{shortDescription}</span>
+            </div>
+            <Button size="small" className={styles.cardBtn}>
+              saiba mais
+            </Button>
+          </div>
+        </div>
         <div className={styles.textContainer}>
           <strong>{name}</strong>
           <span>{shortDescription}</span>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

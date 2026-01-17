@@ -1,11 +1,13 @@
 import styles from "./styles.module.css";
+import clsx from "clsx";
 
 type ButtonProps = {
   children: React.ReactNode;
   size: "small" | "medium" | "big";
   border?: boolean;
+  className?: string;
 };
-export function Button({ children, size, border }: ButtonProps) {
+export function Button({ children, size, border, className }: ButtonProps) {
   const sizeMaps = {
     small: styles.small,
     medium: styles.medium,
@@ -25,13 +27,15 @@ export function Button({ children, size, border }: ButtonProps) {
   if (!border) {
     return (
       <>
-        <button className={`${styles.btn} ${classes}`}>{children}</button>
+        <button className={clsx(styles.btn, classes, className)}>
+          {children}
+        </button>
       </>
     );
   } else {
     return (
       <>
-        <button className={`${styles.btn} ${borderClasses}`}>
+        <button className={clsx(styles.btn, borderClasses, className)}>
           {children}
         </button>
       </>

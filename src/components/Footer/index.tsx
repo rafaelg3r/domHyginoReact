@@ -21,10 +21,10 @@ export function Footer() {
               <div className={styles.footerText}>
                 <h4>Navegação</h4>
                 <Link to="/#home">Início</Link>
-                <Link to="/menu?linha=Boutique">Linhas</Link>
+                <Link to="/menu">Linhas</Link>
                 <Link to="/#lojas">Lojas</Link>
                 <Link to="/#about">Sobre</Link>
-                <Link to="/asfasd">Blog</Link>
+                {/* <Link to="/none">Blog</Link> */}
               </div>
 
               <div className={styles.footerText}>

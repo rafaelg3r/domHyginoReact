@@ -12,34 +12,83 @@ export function MenuCards() {
   const contentMap: ContentMapProps = {
     Boutique: (
       <div className={styles.gridCards}>
-        <Card name="DENVER" shortDescription="Maciez e sabor suave" />
-        <Card name="COWBOY" shortDescription="Suculento, macio e saboroso" />
-        <Card name="SHOULDER" shortDescription="Maciez e sabor suave" />
+        <Card
+          name="DENVER"
+          shortDescription="Maciez e sabor suave"
+          link="/menu?linha=Boutique&carne=denver"
+        />
+        <Card
+          name="COWBOY"
+          shortDescription="Suculento, macio e saboroso"
+          link="/menu?linha=Boutique&carne=cowboy"
+        />
+        <Card
+          name="SHOULDER"
+          shortDescription="Maciez e sabor suave"
+          link="/menu?linha=Boutique&carne=shoulder"
+        />
         <Card
           name="STEAK SHOULDER"
           shortDescription="Suculento, macio e saboroso"
+          link="/menu?linha=Boutique&carne=steak shoulder"
         />
-        <Card name="HOUSE HIB" shortDescription="Suculento, macio e saboroso" />
+        <Card
+          name="HOUSE RIB"
+          shortDescription="Suculento, macio e saboroso"
+          link="/menu?linha=Boutique&carne=house rib"
+        />
       </div>
     ),
     "Novilho Jovem": (
       <div className={styles.gridCards}>
-        <Card name="CONTRAFILÉ" shortDescription="" />
-        <Card name="PICANHA" shortDescription="" />
-        <Card name="MAMINHA" shortDescription="" />
-        <Card name="ENTRECOT" shortDescription="" />
-        <Card name="VAZIO" shortDescription="" />
+        <Card
+          name="CONTRAFILÉ"
+          shortDescription=""
+          link="/menu?linha=Novilho Jovem&carne=contrafilé"
+        />
+        <Card
+          name="PICANHA"
+          shortDescription=""
+          link="/menu?linha=Novilho Jovem&carne=picanha"
+        />
+        <Card
+          name="MAMINHA"
+          shortDescription=""
+          link="/menu?linha=Novilho Jovem&carne=maminha"
+        />
+        <Card
+          name="ENTRECOT"
+          shortDescription=""
+          link="/menu?linha=Novilho Jovem&carne=entrecot"
+        />
+        <Card
+          name="VAZIO"
+          shortDescription=""
+          link="/menu?linha=Novilho Jovem&carne=vazio"
+        />
       </div>
     ),
     Churrasco: (
       <div className={styles.gridCards}>
-        <Card name="COSTELA GRILL" shortDescription="" />
-        <Card name="COSTELA EM TIRA" shortDescription="" />
+        <Card
+          name="COSTELA GRILL"
+          shortDescription=""
+          link="/menu?linha=Churrasco&carne=costela grill"
+        />
+        <Card
+          name="COSTELA EM TIRA"
+          shortDescription=""
+          link="/menu?linha=Churrasco&carne=costela em tira"
+        />
       </div>
     ),
     Pampeira: (
       <div className={styles.gridCards}>
-        <Card name="ALCATRA" shortDescription="" />
+        <Card
+          name="ALCATRA"
+          shortDescription=""
+          link="/menu?linha=Pampeira&carne=alcatra"
+        />
       </div>
     ),
   };

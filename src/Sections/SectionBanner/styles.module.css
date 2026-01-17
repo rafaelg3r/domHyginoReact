@@ -36,7 +36,7 @@
   filter: blur(5rem);
 }
 .bannerLine {
-  z-index: 99;
+  z-index: 3;
   background-color:var(--dark-pink-gray);
   height: 0.5rem;
   width: 100%;
