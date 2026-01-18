@@ -24,17 +24,17 @@ export function MenuCards() {
         />
         <Card
           name="SHOULDER"
-          shortDescription="Maciez e sabor suave"
+          shortDescription="Sabor intenso e textura marmorizada"
           link="/menu?linha=Boutique&carne=shoulder"
         />
         <Card
           name="STEAK SHOULDER"
-          shortDescription="Suculento, macio e saboroso"
+          shortDescription="Corte magro, macio e versátil"
           link="/menu?linha=Boutique&carne=steak shoulder"
         />
         <Card
           name="HOUSE RIB"
-          shortDescription="Suculento, macio e saboroso"
+          shortDescription="Costela premium com maciez extrema"
           link="/menu?linha=Boutique&carne=house rib"
         />
       </div>
@@ -43,27 +43,27 @@ export function MenuCards() {
       <div className={styles.gridCards}>
         <Card
           name="CONTRAFILÉ"
-          shortDescription=""
+          shortDescription="Suculento com capa de gordura"
           link="/menu?linha=Novilho Jovem&carne=contrafilé"
         />
         <Card
           name="PICANHA"
-          shortDescription=""
+          shortDescription="Corte nobre com capa de gordura clássica"
           link="/menu?linha=Novilho Jovem&carne=picanha"
         />
         <Card
           name="MAMINHA"
-          shortDescription=""
+          shortDescription="Maciez incomparável e sabor acentuado"
           link="/menu?linha=Novilho Jovem&carne=maminha"
         />
         <Card
           name="ENTRECOT"
-          shortDescription=""
+          shortDescription="Marmoreio rico e suculência premium"
           link="/menu?linha=Novilho Jovem&carne=entrecot"
         />
         <Card
           name="VAZIO"
-          shortDescription=""
+          shortDescription="Típico churrasco gaúcho, muito saboroso"
           link="/menu?linha=Novilho Jovem&carne=vazio"
         />
       </div>
@@ -72,12 +72,12 @@ export function MenuCards() {
       <div className={styles.gridCards}>
         <Card
           name="COSTELA GRILL"
-          shortDescription=""
+          shortDescription="Assado de tira macio e irresistível"
           link="/menu?linha=Churrasco&carne=costela grill"
         />
         <Card
           name="COSTELA EM TIRA"
-          shortDescription=""
+          shortDescription="Sabor tradicional e suculência"
           link="/menu?linha=Churrasco&carne=costela em tira"
         />
       </div>
@@ -86,7 +86,7 @@ export function MenuCards() {
       <div className={styles.gridCards}>
         <Card
           name="ALCATRA"
-          shortDescription=""
+          shortDescription="Corte magro, macio e de sabor equilibrado"
           link="/menu?linha=Pampeira&carne=alcatra"
         />
       </div>

@@ -51,7 +51,7 @@ export function Card({ name, shortDescription, link }: CardProps) {
 
   return (
     <>
-      <Link className={styles.cardContainer} to={link}>
+      <Link className={styles.cardContainer} to={link} draggable="false">
         <div className={styles.cardImgContainer}>
           <img
             src={image}

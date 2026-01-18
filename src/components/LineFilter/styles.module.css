@@ -2,7 +2,7 @@
   background-color: var(--dark-pink-gray);
   display: flex;
   flex-direction: column;
-  padding: 4rem 3rem;
+  padding: 3rem 4rem;
   gap: 2rem;
   border-radius: 0.6rem;
   width: 100%;
@@ -17,16 +17,22 @@
   gap: 2rem;
 }
 .selectorTitle {
+  padding: 0.4rem;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #2c2125,
+    transparent
+  );
+}
+.selectorTitle:first-child {
   line-height: 0.75;
   font-size: 2.8rem;
-  font-weight: 400;
   font-family: var(--roadstore-font);
-  text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.32rem;
-  background-image: linear-gradient(to right, #2c2125, transparent);
 }
-.selectorOptions 
-{
+.selectorOptions {
   justify-content: space-around;
   display: flex;
   gap: 1.6rem;

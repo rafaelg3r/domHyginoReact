@@ -28,9 +28,10 @@
 
 .lojasMap {
   position: relative;
-  max-width: 77rem;
+  /* max-width: 77rem; */
   width: 100%;
   height: auto;
+  flex: 3;
 }
 
 .lojasMap img {
@@ -40,15 +41,14 @@
   height: auto;
 }
 
-.lojasAreas {
-  display: none;
+.lojasSocials {
+  flex: 2;
 }
 
 .lojasSocials h3 {
   filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.25));
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: 400;
-  max-width: 47.5rem;
   margin-bottom: 2rem;
   font-family: var(--barlow-font);
   font-variant: small-caps;
@@ -70,7 +70,9 @@
   background-color: var(--pink-red-10);
   border: 2px solid var(--pink-red-30);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.1s ease,
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.1s ease,
     background-color 0.2s ease;
 }
 
@@ -101,11 +103,43 @@
   background-color: var(--pink-red);
 }
 
+@media (max-width: 1400px) {
+  .lojas {
+    padding: 10rem 4rem 0 4rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .lojas {
-    padding: 10rem 2rem 0 2rem;
+    padding: 10rem 4rem 0 4rem;
+    background: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lojasMap {
+    display: flex;
+    justify-content: center;
+  }
+  .lojasMap img {
+    max-width: 80%;
+  }
+  .lojasSocials {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
   .lojasContentContainer {
     flex-flow: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .lojas {
+    padding: 10rem 2rem 0 2rem;
+  }
+  .lojasMap img {
+    max-width: 90%;
   }
 }

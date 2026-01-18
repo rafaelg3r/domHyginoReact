@@ -111,9 +111,10 @@ export function SectionCortes() {
           <img
             draggable="false"
             src={bottomBg}
-            className={styles.cortesBottombg}
+            className={styles.cortesBottomBg}
           />
         </picture>
+        
       </section>
     </>
   );

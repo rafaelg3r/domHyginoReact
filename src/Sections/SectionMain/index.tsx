@@ -37,10 +37,10 @@ export function SectionMain() {
             </p>
             <div className={styles.heroBtns}>
               <Link to="/menu">
-                <Button size="big">Ver Produtos</Button>
+                <Button size="big" className={styles.flexBtn}>Ver Produtos</Button>
               </Link>
               <Link smooth to="/#lojas">
-                <Button size="big" border>
+                <Button size="big" border className={styles.flexBtn}>
                   Nossas Lojas
                 </Button>
               </Link>

@@ -85,7 +85,6 @@
 .heroText p {
   font-family: var(--barlow-font);
   max-width: 73.6rem;
-  font-size: 2.4rem;
   letter-spacing: 0.16px;
   line-height: 24px;
 }
@@ -99,6 +98,18 @@
   .hero {
     height: 70rem;
   }
+  .heroText {
+    gap: 3rem;
+  }
+  .heroText p {
+    max-width: 60rem;
+    padding: 0 2rem;
+  }
+
+  .heroBtns {
+    gap: 3rem;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -111,12 +122,18 @@
   .heroBtns {
     flex-flow: column;
     gap: 2rem;
+    width: 80%;
+
+  }
+  .flexBtn {
+    width: 100%;
+    flex: 1 !important;
+    padding: 2rem 0 !important;
   }
 }
 
 @media (max-width: 480px) {
-  
-  .heroTextContent{
+  .heroTextContent {
     gap: 2rem;
   }
   .heroText {
